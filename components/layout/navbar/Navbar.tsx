@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { UserNav } from "./UserNav";
 
 export const Navbar = () => {
   return (
@@ -22,6 +23,10 @@ export const Navbar = () => {
             height={72}
           />
         </Link>
+        <div className='py-2 px-5 border rounded-full'>
+          Search bar
+        </div>
+        <UserNav />
       </div>
     </nav>
   );
