@@ -1,4 +1,8 @@
 import {
+  RegisterLink,
+  LoginLink,
+} from "@kinde-oss/kinde-auth-nextjs/components";
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -30,8 +34,12 @@ export const UserNav = () => {
       <DropdownMenuContent>
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>Register</DropdownMenuItem>
-        <DropdownMenuItem>Login</DropdownMenuItem>
+        <DropdownMenuItem>
+          <RegisterLink>Register</RegisterLink>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <LoginLink>Log in</LoginLink>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
